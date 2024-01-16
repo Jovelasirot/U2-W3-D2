@@ -18,6 +18,12 @@ const saveName = () => {
   }
 };
 
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    saveName();
+  }
+});
+
 const removeName = () => {
   let nameToRemove = document.getElementById("name").value;
 
